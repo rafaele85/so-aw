@@ -1,9 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'node:16'
-            args '-p 3000:3000'
-        }
+        label 'SL202_linux'
     }
     stages {
         stage('Build') {
